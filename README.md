@@ -1,2 +1,6 @@
+> ⚠️ **Disclaimer**  
+This repository is intended **for educational purposes only**.  
+Please **do not install or trust any of the included certificates** in real-world applications.
 
-## This repo is for educational purposes only and it isn't reccommended to install the given certificates since due to the repo being public, it makes the private key of the CA publically available which is done for the purposes of showing how the CA private key looks.
+Since this repository is public, the **private key of the Certificate Authority (CA)** is also publicly available. This is intentional and done solely to **demonstrate the structure and contents** of a CA's private key.  
+Never use these certificates or keys in production environments or with sensitive data.
