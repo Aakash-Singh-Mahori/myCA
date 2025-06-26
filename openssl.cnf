@@ -1,0 +1,32 @@
+[ ca ]
+default_ca = CA_default
+
+[ CA_default ]
+dir             = /home/saurav/myCA
+certs           = $dir/certs
+crl_dir         = $dir/crl
+new_certs_dir   = $dir/newcerts
+database        = $dir/index.txt
+serial          = $dir/serial
+
+private_key     = $dir/private/cakey.pem
+certificate     = $dir/cacert.pem
+
+default_days    = 365
+default_md      = sha256
+
+policy          = policy_any
+x509_extensions = usr_cert
+
+[ policy_any ]
+commonName             = supplied
+stateOrProvinceName    = optional
+organizationName       = optional
+organizationalUnitName = optional
+emailAddress           = optional
+countryName            = optional
+
+[ usr_cert ]
+basicConstraints = CA:FALSE
+keyUsage = digitalSignature, keyEncipherment
+
